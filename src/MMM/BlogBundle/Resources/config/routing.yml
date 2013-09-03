@@ -1,0 +1,10 @@
+mmm_blog_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: MMMBlogBundle:Default:index }
+    
+# src/MMM/BlogBundle/Resources/config/routing.yml    
+HelloTheWorld:
+    path:     /hello-world
+    defaults: {_controller: MMMBlogBundle:Blog:index }
+ 
+    
