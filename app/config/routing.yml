@@ -1,4 +1,4 @@
 mmm_blog:
     resource: "@MMMBlogBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /blog
 

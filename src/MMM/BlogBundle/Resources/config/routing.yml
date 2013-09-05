@@ -1,10 +1,22 @@
-mmm_blog_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: MMMBlogBundle:Default:index }
+mmmblog_accueil:
+    path:      /{page}
+    defaults:  { _controller: MMMBlogBundle:Blog:index, page: 1 }
+    requirements:
+      page: \d* 
+     
+mmmblog_voir:
+    path:      /article/{id}
+    defaults:  { _controller: MMMBlogBundle:Blog:voir }
+     
+mmmblog_ajouter:
+    path:      /ajouter
+    defaults:  { _controller: MMMBlogBundle:Blog:ajouter }
     
-# src/MMM/BlogBundle/Resources/config/routing.yml    
-HelloTheWorld:
-    path:     /hello-world
-    defaults: {_controller: MMMBlogBundle:Blog:index }
+mmmblog_modifier:
+    path:      /modifier
+    defaults:  { _controller: MMMBlogBundle:Blog:modifier }
+    
+mmmblog_supprimer:
+    path:      /supprimer
+    defaults:  { _controller: MMMBlogBundle:Blog:supprimer }
  
-    
